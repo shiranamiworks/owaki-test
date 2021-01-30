@@ -1,0 +1,259 @@
+.lower {
+  .main-visual {
+  }
+}
+
+/* -----------------------------
+concept
+----------------------------- */
+
+#concept {
+}//concept
+
+/* -----------------------------
+asset
+----------------------------- */
+#asset {
+  .values{
+    text-align: left;
+      .value-text{
+        font-size: 22px;
+        letter-spacing: .2em;
+        margin-bottom: 50px;
+      }
+      .value-lead{
+        font-size: 14px;
+        line-height: 2.5;
+        letter-spacing: .15em;
+        margin-bottom: 30px;
+      }
+      .img01{
+        max-width: 500px;
+        margin: auto;
+      }
+      .img02{
+        max-width: 250px;
+        margin: auto;
+      }
+      .img03{
+        max-width: 700px;
+        margin: auto;
+      }
+      .img04{
+        max-width: 234px;
+        margin: 0 auto 30px;
+      }
+      .img05{
+        max-width: 410px;
+        margin: auto;
+      }
+      .caption01{
+        bottom: -76px;
+      }
+      .cap-sp{
+        text-align: left;
+        line-height: 1.4;
+      }
+  }//values
+    
+  .bg{
+    padding: 50px 0;
+  }//bg
+  .bg-not{
+    padding: 50px 0 70px;
+  }
+  .bg-last{
+    padding: 50px 0 60px;
+  }
+}//asset
+    
+    
+/* -----------------------------
+access
+----------------------------- */
+
+#access {
+}//access
+
+
+/* -----------------------------
+  plan
+----------------------------- */
+#plan {
+  .wrap{
+    width: 84%;
+    margin: auto;
+  }
+  .intro{
+    margin-bottom: 60px;
+      .img01{
+        max-width: 130px;
+        margin: 0 0 60px;
+      }
+      .tit{
+        font-size: 22px;
+        letter-spacing: .2em;
+        margin-bottom: 30px;
+      }
+      .sub-tit{
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: .09em;
+        margin-bottom: 60px;
+      }
+      .lead{
+        font-size: 14px;
+        margin-bottom: 140px;
+      }
+      .img02{
+          img{
+            height: 480px;
+          }
+      }
+  }//intro
+  .plans{
+    text-align: left;
+    margin-bottom: 60px;
+      .plan-list{
+          li{
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+          }
+          a{
+            padding: 30px 0;
+          }
+          .texts{
+              .type{
+                font-size: 30px;
+                line-height: 1.4;
+                margin-bottom: 10px;
+                  .name{
+                    font-size: 44px;
+                  }
+                  .num00{
+                    font-size: 40px;
+                  }
+              }
+              .area{
+                  .num02{
+                    font-size: 30px;
+                  }
+              }
+          }//texts
+          .btn{
+            max-width: 230px;
+            margin: 40px auto 0;
+          }
+      }//plan-list
+  }//plans
+}//plan
+
+
+/* -----------------------------
+ plan.detail
+----------------------------- */
+#plan.detail{
+  .wrap{
+    width: 84%;
+    margin: auto;
+  }
+  .plans{
+    text-align: left;
+    margin-bottom: 60px;
+      .reduction{
+        display: none;
+      }
+      .reduction-sp{
+        display: none;
+        position: inherit;
+        max-width: 180px;
+        margin-bottom: 80px;
+        text-align: left;
+          .cap-img{
+            margin: 10px 0 20px;
+            max-width: 120px;
+          }
+      }
+      .type-texts{
+        margin-bottom: 50px;
+          .type{
+            font-size: 30px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+              .name{
+                font-size: 44px;
+              }
+              .num00{
+                font-size: 40px;
+              }
+          }
+          .area{
+              .num02{
+                font-size: 30px;
+              }
+          }
+      }//type-text
+      .catch{
+        margin-bottom: 20px;
+      }
+      .point{
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+      .rooms{
+        margin: 0 auto 60px;
+        width: 100%;
+      }
+      .plan-img{
+        margin-bottom: 20px;
+      }
+      .legend-img{
+        width: 84%;
+        margin: 0 auto 6px;
+          img{
+            max-width: 188px;
+            text-align: left;
+          }
+      }
+      .annotation{
+        width: 84%;
+        margin: auto;
+      }
+  }//plans
+}//plan.detail
+
+
+
+/* -----------------------------
+ map
+----------------------------- */
+
+#map {
+}//map
+
+/* -----------------------------
+ location
+----------------------------- */
+
+#location {
+}//location
+
+/* -----------------------------
+ brand
+----------------------------- */
+#brand {
+}//brand
+
+/* -----------------------------
+quality
+----------------------------- */
+#quality {
+}
+
+/* -----------------------------
+modelroom
+----------------------------- */
+#modelroom {
+}//modelroom

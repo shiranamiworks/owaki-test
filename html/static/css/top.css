@@ -1,0 +1,747 @@
+@charset "UTF-8";
+/* 
+  css設定 @charsetが消されるsass仕様へのハック用コメントです。削除しないでください。新規作成時も必須！
+ */
+#top {
+  overflow: hidden;
+}
+
+#top .mv-message {
+  display: none;
+}
+
+#top .main-visual {
+  position: relative;
+  height: 100vh;
+  box-shadow: 0px 0px 5px #666;
+}
+
+#top .main-visual .mv-point {
+  position: absolute;
+  top: 17%;
+  right: 2%;
+  max-width: 100px;
+  margin: auto;
+  z-index: 10;
+}
+
+#top .main-visual .scenes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#top .main-visual .scene01 {
+  z-index: 8;
+}
+
+#top .main-visual .scene01 .texts {
+  color: #fff;
+  top: 50%;
+  right: auto;
+  left: 10%;
+}
+
+#top .main-visual .scene01 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/top/mv02.jpg) no-repeat bottom center;
+  background-size: cover;
+}
+
+#top .main-visual .text01 {
+  font-size: 56px;
+  line-height: 1.6;
+  letter-spacing: .25em;
+}
+
+#top .main-visual .texts {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 396px;
+  transform: translateY(-50%);
+  z-index: 6;
+}
+
+#top .main-visual .texts .text02 {
+  padding-top: 25px;
+  font-size: 18px;
+  transition: opacity .8s;
+  opacity: 0;
+  letter-spacing: 0.6em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#top .main-visual .texts .text02.on {
+  opacity: 1;
+}
+
+#top .main-visual .caption {
+  bottom: 50px;
+  right: 0;
+  z-index: 7;
+}
+
+#top .main-visual .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/top/front-pc.png) no-repeat left top;
+  background-size: cover;
+  z-index: 5;
+  z-index: 6;
+}
+
+#top .main-visual .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/top/mv01-pc.png) no-repeat center;
+  background-size: cover;
+  z-index: 2;
+}
+
+#top .main-visual .slide.current {
+  z-index: 5;
+  opacity: 1;
+}
+
+#top .main-visual .slide.slide02 {
+  background-image: url(../images/top/mv02-pc.png);
+  z-index: 4;
+}
+
+#top .main-visual .slide.slide03 {
+  background-image: url(../images/top/mv03-pc.png);
+  z-index: 3;
+}
+
+#top .main-visual .message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  background: #BBA3A9;
+  z-index: 16;
+}
+
+#top .main-visual .message span {
+  display: inline-block;
+  padding-left: 50px;
+  position: relative;
+}
+
+#top .main-visual .message span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background: #fff;
+}
+
+#top .main-visual .bg {
+  opacity: 0;
+}
+
+#top main img {
+  width: 100%;
+}
+
+#top .wrap.bordered {
+  border-top: 1px solid #707070;
+}
+
+#top .notes-area {
+  padding: 20px 0;
+  margin: auto;
+  max-width: 840px;
+  max-width: 1274px;
+  font-size: 0;
+}
+
+#top .notes-area .num {
+  color: #8B4652;
+}
+
+#top .notes-area li {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 1.6%;
+  vertical-align: top;
+  letter-spacing: .15em;
+}
+
+#top .notes-area li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #595757;
+}
+
+#top .notes-area li:last-child:after {
+  display: none;
+}
+
+#top .notes-area .cond01 {
+  width: 24%;
+}
+
+#top .notes-area .cond01 .text01 {
+  font-size: 12px;
+}
+
+#top .notes-area .cond01 .text02 {
+  font-size: 20px;
+  letter-spacing: .15em;
+  padding-bottom: 14px;
+}
+
+#top .notes-area .cond02 {
+  width: 32%;
+}
+
+#top .notes-area .cond02 .text01 {
+  font-size: 12px;
+}
+
+#top .notes-area .cond02 .text02 {
+  font-size: 20px;
+  letter-spacing: .15em;
+  padding-bottom: 14px;
+}
+
+#top .notes-area .cond03 {
+  width: 23%;
+}
+
+#top .notes-area .cond03 .text01 {
+  font-size: 18px;
+}
+
+#top .notes-area .cond03 .text02 {
+  font-size: 12px;
+  padding: 8px 0 6px;
+}
+
+#top .notes-area .cond04 {
+  width: 20%;
+}
+
+#top .notes-area .cond04 .text01 {
+  font-size: 12px;
+}
+
+#top .notes-area .cond04 .text02 {
+  font-size: 20px;
+  padding-bottom: 14px;
+}
+
+#top .notes-area .cond04 .num {
+  margin: 0 4px;
+}
+
+#top .notes-area .cond05 {
+  width: 22%;
+  padding: 5px 1.4% 5px 6%;
+}
+
+#top .notes-area .cond05 .text01 {
+  font-size: 18px;
+}
+
+#top .notes-area .cond05 .text02 {
+  font-size: 12px;
+  padding: 8px 0 6px;
+}
+
+#top .notes-area .cond05 .num {
+  margin: 0 4px;
+}
+
+#top .notes-area .cond06 {
+  width: 18%;
+  padding: 5px 2%;
+}
+
+#top .notes-area .cond06 .text01 {
+  font-size: 12px;
+}
+
+#top .notes-area .cond06 .text02 {
+  font-size: 27px;
+  letter-spacing: .15em;
+  padding: 14px 0 10px;
+}
+
+#top .notes-area .cond07 {
+  width: 60%;
+  padding: 5px 6% 5px 1.4%;
+}
+
+#top .notes-area .cond07 .text01 {
+  font-size: 12px;
+}
+
+#top .notes-area .cond07 .text02 {
+  font-size: 18px;
+  letter-spacing: .15em;
+  padding: 4px 0 19px;
+}
+
+#top .notes-area01 {
+  margin-top: 20px;
+}
+
+#top .notes-area02 {
+  border-top: 1px solid;
+}
+
+#top section.information {
+  padding-top: 130px;
+  text-align: center;
+  padding-bottom: 155px;
+}
+
+#top section.information .title {
+  font-size: 16px;
+  letter-spacing: 0.5em;
+  padding-bottom: 30px;
+}
+
+#top section.information .lead {
+  font-size: 32px;
+  line-height: 1.8;
+  padding-bottom: 25px;
+}
+
+#top section.information .button {
+  margin: 0 auto;
+  max-width: 338px;
+}
+
+#top section.information .texts {
+  line-height: 1.8;
+  padding: 0px 0 40px;
+}
+
+#top section.contents .contents-title {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.5em;
+  padding-bottom: 100px;
+}
+
+#top section.contents .intro {
+  width: 93.75%;
+  box-sizing: border-box;
+  margin: 0 auto 55px;
+  position: relative;
+  padding: 225px 0 120px;
+}
+
+#top section.contents .intro .inner {
+  position: relative;
+  z-index: 4;
+  box-sizing: border-box;
+  padding: 0 10%;
+}
+
+#top section.contents .intro .inner .caption01 {
+  color: #2b2b2b;
+  background: none;
+  bottom: 8%;
+}
+
+#top section.contents .intro header {
+  float: left;
+  width: 45.4166%;
+}
+
+#top section.contents .intro .title {
+  margin: 0 28% 65px 42%;
+  margin: 0 42% 65px 26%;
+}
+
+#top section.contents .intro .lead {
+  font-size: 36px;
+  letter-spacing: .1em;
+  padding-bottom: 50px;
+  line-height: 1.8;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#top section.contents .intro .text {
+  font-size: 14px;
+  line-height: 3.2;
+}
+
+#top section.contents .intro .image {
+  float: right;
+  width: 36%;
+}
+
+#top section.contents .intro .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#top section.contents .intro .bg .bgs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/top/body-bg02-pc.png) center;
+  background-size: cover;
+}
+
+#top section.contents .intro .bg .bg01 {
+  z-index: 2;
+}
+
+#top section.contents .intro .bg .bg02 {
+  background-image: url(../images/top/body-bg03-pc.png);
+  z-index: 1;
+}
+
+#top section.contents .links li {
+  position: relative;
+  width: 93.75%;
+  box-sizing: border-box;
+  margin: 0 auto 55px;
+  overflow: hidden;
+}
+
+#top section.contents .links li .caption {
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+}
+
+#top section.contents .links li .point-right {
+  position: absolute;
+  top: 6%;
+  left: 4%;
+  z-index: 5;
+  max-width: 100px;
+}
+
+#top section.contents .links a {
+  position: relative;
+  display: block;
+  color: #595757;
+}
+
+#top section.contents .links .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  letter-spacing: 1em;
+  font-size: 40px;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 4;
+}
+
+#top section.contents .links .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 5s ease-in-out;
+}
+
+#top section.contents .links a:hover {
+  opacity: 1;
+}
+
+#top section.contents .links a:hover .image {
+  transform: scale(1.2);
+}
+
+#top .page-annotation {
+  padding-top: 15px;
+  font-size: 10px;
+  line-height: 2.1;
+}
+
+#top .page-annotation p {
+  line-height: 2;
+}
+
+@media (max-width: 1024px) {
+  #top .main-visual {
+    box-shadow: none;
+  }
+  #top .main-visual .mv-point {
+    display: none;
+  }
+  #top .main-visual .caption {
+    bottom: 0;
+  }
+  #top .main-visual .front {
+    background-position: right bottom;
+  }
+  #top .main-visual .message {
+    display: none;
+  }
+  #top .main-visual .bg {
+    opacity: 0;
+  }
+  #top .mv-message {
+    position: relative;
+    z-index: 2;
+    display: block;
+    box-shadow: 0px 0px 5px #666;
+    margin-bottom: 0;
+    background: #BBA3A9;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    line-height: 2.5;
+    padding: 25px 0;
+  }
+  #top main img {
+    width: 100%;
+  }
+  #top .wrap.bordered {
+    border-top: none;
+  }
+  #top .notes-area {
+    padding: 35px 0 0px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  #top .notes-area .pc {
+    display: none !important;
+  }
+  #top .notes-area .sp {
+    display: block !important;
+  }
+  #top .notes-area li {
+    float: none;
+    display: block;
+    width: auto !important;
+    padding: 21px 0 25px;
+    border-bottom: 1px solid #595757;
+    text-align: center;
+  }
+  #top .notes-area li:after {
+    display: none;
+  }
+  #top .notes-area.notes-area02 {
+    max-width: 740px;
+    padding-top: 0;
+  }
+  #top .notes-area.notes-area02 li {
+    width: auto;
+  }
+  #top .notes-area.notes-area02 li:last-child {
+    border-bottom: none;
+  }
+  #top .notes-area .cond01 .text02 {
+    font-size: 16px;
+    letter-spacing: 0;
+    padding-bottom: 0;
+  }
+  #top .notes-area .cond02 .text02 {
+    font-size: 16px;
+    letter-spacing: 0;
+    padding-bottom: 0;
+  }
+  #top .notes-area .cond03 .text01 {
+    font-size: 16px;
+  }
+  #top .notes-area .cond03 .text02 {
+    padding: 8px 0 0;
+  }
+  #top .notes-area .cond04 .text01 {
+    display: none;
+  }
+  #top .notes-area .cond04 .text02 {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+  #top .notes-area .cond05 {
+    padding: 21px 0 25px;
+  }
+  #top .notes-area .cond05 .text01 {
+    font-size: 16px;
+  }
+  #top .notes-area .cond05 .text02 {
+    padding: 8px 0 0;
+  }
+  #top .notes-area .cond06 {
+    padding: 21px 0 25px;
+  }
+  #top .notes-area .cond06 .text01 {
+    font-size: 12px;
+  }
+  #top .notes-area .cond06 .text02 {
+    font-size: 20px;
+    letter-spacing: 0;
+    padding: 8px 0 0;
+  }
+  #top .notes-area .cond07 {
+    padding: 21px 0 25px;
+  }
+  #top .notes-area .cond07 .text01 {
+    font-size: 12px;
+  }
+  #top .notes-area .cond07 .text02 {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 8px 0 0;
+  }
+  #top .notes-area02 {
+    border-top: none;
+  }
+  #top section.information {
+    padding-top: 120px;
+    padding-bottom: 125px;
+  }
+  #top section.information .title {
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+  #top section.information .lead {
+    font-size: 20px;
+    line-height: 1.8;
+    padding-bottom: 25px;
+  }
+  #top section.information .button {
+    margin: 0 auto;
+    max-width: 338px;
+  }
+  #top section.information .texts {
+    line-height: 1.8;
+    padding: 0px 0 40px;
+  }
+  #top section.contents .contents-title {
+    font-size: 16px;
+    padding-bottom: 35px;
+  }
+  #top section.contents .intro {
+    width: 100%;
+    margin: 0 auto 50px;
+    padding: 75px 0 65px;
+  }
+  #top section.contents .intro .inner {
+    padding: 0 10%;
+  }
+  #top section.contents .intro header {
+    float: none;
+    width: auto;
+  }
+  #top section.contents .intro .title {
+    margin: 0 0 55px 0;
+    width: 38.125%;
+  }
+  #top section.contents .intro .lead {
+    font-size: 30px;
+    line-height: 1.9;
+    padding-bottom: 30px;
+  }
+  #top section.contents .intro .text {
+    font-size: 14px;
+    line-height: 3.2;
+  }
+  #top section.contents .intro .image {
+    float: none;
+    width: 90%;
+    margin: 40px auto 0;
+  }
+  #top section.contents .intro .bg .bgs {
+    background-image: url(../images/top/body-bg02-sp.png);
+  }
+  #top section.contents .intro .bg .bg02 {
+    background-image: url(../images/top/body-bg03-sp.png);
+  }
+  #top section.contents .links li {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+  #top section.contents .links li .caption {
+    bottom: auto;
+    top: 0;
+  }
+  #top section.contents .links li .point-right {
+    display: none;
+  }
+  #top section.contents .links .text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #top .page-annotation {
+    padding-top: 15px;
+    font-size: 10px;
+    line-height: 2.1;
+  }
+  #top .page-annotation p {
+    line-height: 2;
+  }
+}
+
+@media (max-width: 757px) {
+  #top .main-visual .front {
+    background-image: url(../images/top/front-sp.png);
+  }
+  #top .main-visual .slide {
+    background-image: url(../images/top/mv01-sp.png);
+  }
+  #top .main-visual .text01 {
+    font-size: 25.2px;
+    line-height: 1.4;
+    letter-spacing: .2em;
+  }
+  #top .main-visual .scene01 .texts {
+    top: 34%;
+    right: 1.5%;
+    left: auto;
+    width: 155px;
+  }
+  #top .main-visual .scene01 .image {
+    background-image: url(../images/top/mv02-sp.jpg);
+  }
+  #top .main-visual .texts {
+    position: absolute;
+    top: 34%;
+    right: 1%;
+    width: 155px;
+    transform: translateY(0%);
+  }
+  #top .main-visual .texts .text02 {
+    padding-top: 15px;
+    font-size: 9px;
+    letter-spacing: .3em;
+  }
+}
+
+/*# sourceMappingURL=top.css.map */

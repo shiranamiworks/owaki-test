@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<%
+config  = {
+  directory_pos : "../",
+  url : "map/",
+  page_id : "map",
+  page_class: "lower",
+  title: "現地案内図｜【公式】ルジェンテ文京湯島｜文京区、東京メトロ千代田線「湯島」駅の新築分譲マンション",
+  keywords: "ルジェンテ文京湯島,文京区,東京メトロ千代田線,湯島駅,東急リバブル,新築,分譲マンション,L'GENTE,ルジェンテ",
+  description: "ルジェンテ文京湯島の公式サイト。「湯島」駅 徒歩5分。東急リバブルの新築分譲マンション「L'GENTE（ルジェンテ）」シリーズ。",
+  add_stylesheet: ["static/css/lower.css"]
+};
+%><%-  include("../_header",{ config:config});  %>
+
+
+<div class="content-bg">
+  <div class="bgs bg01 current"></div>
+</div>
+<main>
+  <div class="main-visual">
+    <h2 class="mv-title prompt">MAP</h2>
+    <p class="caption">Image photo</p>
+    <div class="image"></div>
+    <div class="bg"><img src="../static/images/map/mv.jpg" alt="" class="pc"><img src="../static/images/map/mv-sp.jpg" alt="" class="sp"></div>
+  </div>
+
+  <div class="map-image">
+    <div class="wrap">
+      <div class="image"><img src="../static/images/map/map.jpg" alt=""></div>
+      <ul class="buttons">
+        <li class="button js-scroll"><a href="https://goo.gl/maps/hx93rieCCrMy7N5a9" target="_blank" class="common-button common-button01"><span>google map</span></a></li>
+        <li class="button js-scroll"><a href="../static/pdf/map.pdf" target="_blank" class="common-button common-button02"><span>印刷用PDF</span></a></li>
+      </ul>
+    </div>
+  </div><!-- /information -->
+
+
+
+</main>
+
+
+
+
+<%-  include("../_footer",{config:config}); %>
+
+</body>
+</html>

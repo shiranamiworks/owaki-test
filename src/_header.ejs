@@ -1,0 +1,125 @@
+<html lang="ja">
+<head>
+<%
+  site_config  = {
+    tel_number : "0120-109-433",
+    tel_link : "tel:0120109433",
+    outline_link : "https://www.livable.co.jp/kounyu/s/detail/LGTYUSMA/outline/",
+    online_link : "#online_link",
+    request_link : "https://www.livable.co.jp/inquiry/LGTYUSMA/",
+    reserve_link : "#"
+  };
+  %>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T8PF8CL');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PWGXVB');</script>
+<!-- End Google Tag Manager -->
+
+
+  <!-- meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="keywords" content="<%= config.keywords %>">
+<meta name="description" content="<%= config.description %>">
+<title><%= config.title %></title>
+<link rel="start" href="/" title="ホーム">
+<link rel="canonical" href="http://l-yushima.com/<%= config.url %>">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=Noto+Serif+JP:wght@200;300;400;500;600;700&family=Prompt:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cardo&family=Crimson+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<link href="<%= config.directory_pos %>static/css/style.css" rel="stylesheet" media="all">
+<link href="<%= config.directory_pos %>static/css/smartphone.css" rel="stylesheet" media="screen and (max-width:767px)">
+
+<% config.add_stylesheet.forEach(function (value, key) { %>
+<link rel="stylesheet" href="<%= config.directory_pos %><%= value %>">
+<% }); %>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="<%= config.directory_pos %>static/js/script.js"></script>
+<!-- init -->
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8PF8CL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGXVB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="all-wrap <%= config.page_class %>" id="<%= config.page_id %>">
+    <header class="site-header">
+      <div class="wrap">
+        <div class="header-upper clearfix">
+            <h1 class="logo"><a href="<%= config.directory_pos %>"><img src="<%= config.directory_pos %>static/images/common/logo.png" alt="ルジェンテ文京湯島"></a></h1>
+
+          <nav class="side-contents">
+            <ul class="tools clearfix">
+              <li class="pages block clearfix">
+                <div class="tel"><a href="<%= site_config.tel_link %>">TEL</a></div>
+                <div class="outline"><a href="<%= site_config.outline_link %>" target="_blank">物件概要</a></div>
+                <div class="map"><a href="<%= config.directory_pos %>map/">現地案内図</a></div>
+                <div class="lgente"><a href="<%= config.directory_pos %>brand/">L'GENTE</a></div>
+              </li>
+              <li class="forms form block clearfix">
+                <div class="commonEntryButton request"><a href="<%= site_config.request_link %>" target="_blank"><span>資料請求</span></a></div>
+              </li>
+              <li class="forms form01 block clearfix">
+                <div class="commonEntryButton reserve"><a href="<%= site_config.reserve_link %>" target="_blank"><span>来場予約</span></a></div>
+              </li>
+              <li class="forms form02 block clearfix">
+               <div class="commonEntryButton online"><a href="<%= site_config.online_link %>" target="_blank"><span>オンライン案内</span></a></div>
+             </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="global-navi-base">
+          <nav class="global-navi">
+            <ul class="clearfix">
+              <li class="top"><a href="<%= config.directory_pos %>"><span class="en cormorant">TOP</span>トップ</a></li>
+              <li class="position"><a href="<%= config.directory_pos %>position/"><span class="en cormorant">POSITION</span>ポジション</a></li>
+              <li class="location"><a href="<%= config.directory_pos %>location/"><span class="en cormorant">LOCATION</span>ロケーション</a></li>
+              <li class="access"><a href="<%= config.directory_pos %>access/"><span class="en cormorant">ACCESS</span>アクセス</a></li>
+              <li class="design"><a href="<%= config.directory_pos %>design/"><span class="en cormorant">DESIGN</span>デザイン</a></li>
+              <li class="plan"><a href="<%= config.directory_pos %>plan/"><span class="en cormorant">PLAN</span>プラン</a></li>
+              <li class="modelroom"><a href="<%= config.directory_pos %>modelroom/"><span class="en cormorant">MODEL ROOM</span>モデルルーム</a></li>
+              <li class="quality"><a href="<%= config.directory_pos %>quality/"><span class="en cormorant">QUALITY</span>設備仕様</a></li>
+              <li class="asset"><a href="<%= config.directory_pos %>asset/"><span class="en cormorant">ASSET VALUE</span>資産性</a></li>
+              <!--<li class="merit"><a href="<%= config.directory_pos %>merit/"><span class="en cormorant">MERIT</span>完成後販売</a></li>-->
+              <li class="outline tb sp"><a href="<%= site_config.outline_link %>" target="_blank"><span class="en cormorant">OUTLINE</span>物件概要</a></li>
+              <li class="map tb sp"><a href="<%= config.directory_pos %>map/"><span class="en cormorant">MAP</span>現地案内図</a></li>
+            </ul>
+            <!--<p class="lead tb sp">南面に緑豊かな<br>「新花公園」を抱く、<br>全73邸のモダンレジデンス。</p>-->
+          </nav><!-- global-navi -->
+          <div class="bar"></div>
+        </div><!-- global-navi-base -->
+
+        <div class="menu tb sp"></div>
+      </div>
+
+
+    </header><!-- / site-header -->

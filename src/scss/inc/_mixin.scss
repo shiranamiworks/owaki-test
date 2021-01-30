@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -ms-transform: $transform;
+  -moz-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($property, $duration, $timing) {
+  -webkit-transition: $property $duration $timing;
+  -ms-transition: $property $duration $timing;
+  -moz-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+
+@mixin transitionPro($property) {
+  -webkit-transition-property: unquote($property);
+  -ms-transition-property: unquote($property);
+  -moz-transition-property: unquote($property);
+  transition-property: unquote($property);
+}
+
+@mixin transitionDur($duration) {
+  -webkit-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+@mixin transitionTim($timing) {
+  -webkit-transition-timing-function: $timing;
+  -ms-transition-timing-function: $timing;
+  -moz-transition-timing-function: $timing;
+  transition-timing-function: $timing;
+}
+
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin grad1($start, $end) {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1, $end), color-stop(0, $start));
+  background: -webkit-linear-gradient(top, $start 0%, $end 100%);
+  background: -moz-linear-gradient(top, $start 0%, $end 100%);
+  background: -ms-linear-gradient(top, $start 0%, $end 100%);
+  background: linear-gradient(to bottom, $start 0%, $end 100%);
+}
+
+@mixin after-given {
+  content: "";
+  display: block;
+}
+@mixin abs-topce($top: 0) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+@mixin abs-tople($top: 0,$left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+@mixin abs-topri($top: 0,$right: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+@mixin abs-cece {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin abs-cele($left:0) {
+  position: absolute;
+  top: 50%;
+  left: $left;
+  transform: translate(0,-50%);
+}
+@mixin abs-ceri($right:0) {
+  position: absolute;
+  top: 50%;
+  right: $right;
+  transform: translate(0,-50%);
+}
+
+@mixin abs-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@mixin tac {
+  text-align: center;
+}
+@mixin tar {
+  text-align: right;
+}
+@mixin tal {
+  text-align: left;
+}
+

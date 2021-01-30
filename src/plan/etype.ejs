@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<%
+config  = {
+  directory_pos : "../",
+  url : "plan/etype.html",
+  page_id : "plan",
+  page_class: "lower detail",
+  title: "ETYPE｜プラン｜【公式】ルジェンテ文京湯島｜文京区、東京メトロ千代田線「湯島」駅の新築分譲マンション",
+  keywords: "ルジェンテ文京湯島,文京区,東京メトロ千代田線,湯島駅,東急リバブル,新築,分譲マンション,L'GENTE,ルジェンテ",
+  description: "ルジェンテ文京湯島の公式サイト。「湯島」駅 徒歩5分。東急リバブルの新築分譲マンション「L'GENTE（ルジェンテ）」シリーズ。",
+  add_stylesheet: ["static/css/lower.css"]
+};
+%><%-  include("../_header",{ config:config});  %>
+
+
+<div class="content-bg">
+  <div class="bgs bg01 current"></div>
+</div>
+<main>
+  <div class="main-visual">
+    <h2 class="mv-title prompt">PLAN</h2>
+    <p class="caption">Image photo</p>
+    <div class="image"></div>
+    <div class="bg"><img src="../static/images/plan/mv.jpg" alt="" class="pc"><img src="../static/images/plan/mv-sp.jpg" alt="" class="sp"></div>
+  </div>
+
+    
+  <div class="plans etype clearfix">
+    <div class="reduction pc">
+      <img src="../static/images/plan/etype-01.png">
+      <img src="../static/images/plan/cap.png" class="cap-img">
+    </div>
+    <div class="wrap">
+      <div class="type-texts">
+        <p class="type cormorant"><span class="name">E</span>type<br><span class="cardo num00">1</span><span class="ldk">LDK</span></p>
+        <p class="area cardo">専有面積/<span class="num01">32</span><span class="num02">.04</span><span class="unit">㎡</span></p>
+        <p class="sub-area crimson">バルコニー面積/<span class="num">6.56</span>㎡</p>
+      </div>
+      <p class="catch">上質なキッチンや<br class="sp">引き戸による<br class="pc">可変性<br class="sp">に優れた南向き・<br class="sp">1LDKプラン</p>
+      <p class="point">ダイニング・キッチンと窓外を見渡せる、美しく洗練されたオープンキッチン。<br>スタイルに合わせて個室や大空間へ可変できる引き戸を採用。<br>廊下からキッチンに連なる3連物入、クロゼットなどの多彩な収納。</p>
+    </div>
+    <div class="rooms wrap">
+      <div class="image plan-img">
+        <img src="../static/images/plan/etype.png">
+      </div>
+      <div class="image legend-img">
+        <img src="../static/images/plan/legend.png" class="pc">
+        <img src="../static/images/plan/legend-sp.png" class="sp">
+      </div>
+      <!--<p class="annotation">WTC : ウォークスルークローゼット</p>-->
+    </div>
+    <div class="reduction-sp wrap">
+      <img src="../static/images/plan/etype-01.png">
+      <img src="../static/images/plan/cap.png" class="cap-img">
+    </div>
+
+    <ul class="plan-list wrap">
+      <li>
+        <a href="../plan/dtype.html">
+          <div class="texts">
+            <p class="type cormorant"><span class="name">D</span>type<br><span class="cardo num00">3</span><span class="ldk">LDK+WIC</span></p>
+            <p class="area cardo">専有面積/<span class="num01">65</span><span class="num02">.58</span><span class="unit">㎡</span></p>
+          </div>
+          <p class="btn">view</p>
+        </a>
+      </li>
+      <li>
+        <a href="../plan/mtype.html">
+          <div class="texts">
+            <p class="type cormorant"><span class="name">M</span>type<br><span class="cardo num00">3</span><span class="ldk">LDK+WIC</span></p>
+            <p class="area cardo">専有面積/<span class="num01">70</span><span class="num02">.36</span><span class="unit">㎡</span></p>
+          </div>
+          <p class="btn">view</p>
+        </a>
+      </li>
+    </ul>
+  </div><!-- plans etype -->
+
+
+</main>
+
+
+<div class="page-annotation">
+  <p class="wrap">※畳数は「約」表示となります。<br>※方位記号は若干誤差があります。正確な方位については設計図書でご確認ください。<br>※掲載の間取り図は、計画段階の図面を基に描き起こしたもので、今後変更になる場合がございます。</p>
+</div>
+
+
+
+<%-  include("../_footer",{config:config}); %>
+
+</body>
+</html>

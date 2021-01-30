@@ -1,0 +1,55 @@
+
+/*==================================================================================
+ common
+==================================================================================*/
+main img {
+  width: 100%;
+}
+
+.common-btns01 {
+  padding-top: 60px;
+}
+.common-btns01 li {
+  width: 145px;
+  font-size: 10px;
+}
+.common-btns01 li a {
+  padding: 15px 0 14px;
+}
+.common-btns01 li span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 16px;
+}
+.common-btns01 li span:before {
+  width: 14px;
+  height: 18px;
+}
+
+
+/*==================================================================================
+ site-header
+==================================================================================*/
+/*==================================================================================
+ siteFooter
+==================================================================================*/
+.site-footer .company-links {
+  padding-bottom: 15px;
+}
+.site-footer .company-links li {
+  display: inline-block;
+  width: 47%;
+  vertical-align: middle;
+  margin-right: auto;
+}
+.site-footer .company-links li img {
+  margin-top: 19px;
+}
+.site-footer .company-links li:last-child {
+  float: right;
+  margin-right: auto;
+}
+.site-footer .company-links li:last-child img {
+  margin-top: 0;
+}
+

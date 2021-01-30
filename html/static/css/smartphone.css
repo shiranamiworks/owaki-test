@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* 
+  css設定 @charsetが消されるsass仕様へのハック用コメントです。削除しないでください。新規作成時も必須！
+ */
+/*==================================================================================
+ default
+==================================================================================*/
+/*==================================================================================
+ common
+==================================================================================*/
+main img {
+  width: 100%;
+}
+
+.common-btns01 {
+  padding-top: 60px;
+}
+.common-btns01 li {
+  width: 145px;
+  font-size: 10px;
+}
+.common-btns01 li a {
+  padding: 15px 0 14px;
+}
+.common-btns01 li span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 16px;
+}
+.common-btns01 li span:before {
+  width: 14px;
+  height: 18px;
+}
+
+/*==================================================================================
+ site-header
+==================================================================================*/
+/*==================================================================================
+ siteFooter
+==================================================================================*/
+.site-footer .company-links {
+  padding-bottom: 15px;
+}
+.site-footer .company-links li {
+  display: inline-block;
+  width: 47%;
+  vertical-align: middle;
+  margin-right: auto;
+}
+.site-footer .company-links li img {
+  margin-top: 19px;
+}
+.site-footer .company-links li:last-child {
+  float: right;
+  margin-right: auto;
+}
+.site-footer .company-links li:last-child img {
+  margin-top: 0;
+}
+
+/*==================================================================================
+ navi
+==================================================================================*/
+.global-navi-base .global-navi li.new a:before {
+  top: 4.5px;
+  left: 13%;
+}
+
+/*==================================================================================
+ top
+==================================================================================*/
+  #top .cp-bnr{
+  text-align: center;
+  margin: 70px auto 60px;
+  width: 90%;
+  }
+/*==================================================================================
+ lower common
+==================================================================================*/
+/*-----------------
+brand
+-----------------*/
+#brand .main-visual {
+  margin-bottom: 32px;
+  padding: 90px 0 115px;
+  background: url(../images/brand/bg-sp.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+#brand .main-visual .brand-logo {
+  padding-bottom: 40px;
+}
+#brand .main-visual .brand-logo img {
+  width: 69px;
+}
+#brand .main-visual h2 {
+  padding-bottom: 40px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+#brand .main-visual .lead {
+  font-size: 12px;
+  line-height: 1.9;
+  letter-spacing: .05em;
+  text-align: left;
+}
+#brand .main-visual .lead br {
+  display: none;
+}
+#brand .content-wrapper {
+  padding-bottom: 50px;
+}
+#brand .series h3 {
+  padding-bottom: 20px;
+}
+#brand .series h3 img {
+  width: 200px;
+}
+#brand .series li {
+  float: left;
+  width: 49%;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+#brand .series li:nth-child(2n) {
+  float: right;
+}
+#brand .series li:nth-child(3n+1) {
+  clear: none;
+}
+#brand .series li:nth-child(2n+1) {
+  clear: both;
+}
